@@ -3,7 +3,7 @@ import backgroundImage from "../../assets/images/BtnBG.png";
 import {useDispatch, useSelector} from "react-redux";
 import {fetchMenus} from "../../redux/menu/menuSlice";
 import axios from "../../Utils/axiosInstance";
-import ItemCardSection from "../../components/itemCardSection";
+import ItemCardSection from "../../components/ItemCardSection";
 const MenuSection = () => {
   const dispatch = useDispatch();
   const {menus, loading, error} = useSelector((state) => state.menu);
