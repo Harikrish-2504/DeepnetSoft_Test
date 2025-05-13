@@ -1,0 +1,22 @@
+const mongoose = require("mongoose");
+
+const menuSchema = mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+  items: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Item",
+    },
+  ],
+});
+
+const Menu = mongoose.model("Menu", menuSchema);
+
+module.exports = Menu;

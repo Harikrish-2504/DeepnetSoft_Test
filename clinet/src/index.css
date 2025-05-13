@@ -1,0 +1,16 @@
+@import "tailwindcss";
+.CustomKellyFont {
+  font-family: "Kelly Slab", cursive;
+}
+
+.customOswaldFont {
+  font-family: "Oswald", sans-serif;
+}
+
+.customTextShadow {
+  text-shadow: 5px 4px 0 #800020;
+}
+
+.smRedTextShadow {
+  text-shadow: 2px 1px 0 #800020;
+}
